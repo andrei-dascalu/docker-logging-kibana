@@ -22,3 +22,6 @@
 #https://www.elastic.co/guide/en/logstash/current/docker.html
 ##winpty docker run -i -t -v //c/Users/austerus/Projects:/da:rw andrei/logstash
 ##winpty docker run -d --net=logging --name andrei-logstash -p 5044:5044 andrei/logstash logstash agent -f config/
+
+
+#winpty docker run -d --net=logging --name andrei-kibana -p 80:80 -p 5601:5601 andrei/kibana nginx -g "daemon off;"

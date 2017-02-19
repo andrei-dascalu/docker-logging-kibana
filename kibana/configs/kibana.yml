@@ -1,8 +1,8 @@
 # Kibana is served by a back end server. This setting specifies the port to use.
-# server.port: 5601
+server.port: 5601
 
 # This setting specifies the IP address of the back end server.
-server.host: "localhost"
+server.host: "andrei-kibana"
 
 # Enables you to specify a path to mount Kibana at if you are running behind a proxy. This setting
 # cannot end in a slash.
@@ -12,7 +12,7 @@ server.host: "localhost"
 # server.maxPayloadBytes: 1048576
 
 # The URL of the Elasticsearch instance to use for all your queries.
-# elasticsearch.url: "http://localhost:9200"
+elasticsearch.url: "http://andrei-elastic:9200"
 
 # When this setting’s value is true Kibana uses the hostname specified in the server.host
 # setting. When the value of this setting is false, Kibana uses the hostname of the host

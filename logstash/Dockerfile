@@ -21,9 +21,9 @@ RUN set -ex && for path in logs config; do \
         chown -R logstash:logstash "$path"; \
     done
 
-ADD configs/02-beats-input.conf /opt/logstash/config/02-beats-input.conf
-ADD configs/10-syslog-filter.conf /opt/logstash/config/10-syslog-filter.conf
-ADD configs/30-elasticsearch-output.conf /opt/logstash/config/30-elasticsearch-output.conf
+COPY configs/02-beats-input.conf /opt/logstash/config/02-beats-input.conf
+COPY configs/10-syslog-filter.conf /opt/logstash/config/10-syslog-filter.conf
+COPY configs/30-elasticsearch-output.conf /opt/logstash/config/30-elasticsearch-output.conf
 
 ENV PATH=$PATH:/opt/logstash/bin
 

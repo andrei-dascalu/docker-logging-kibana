@@ -11,7 +11,6 @@ RUN echo 'deb http://packages.elastic.co/logstash/2.2/debian stable main' | tee 
 
 RUN apt-get update -yqq
 
-
 RUN apt-get -yqq install logstash
 
 WORKDIR /opt/logstash

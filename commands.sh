@@ -24,4 +24,6 @@
 ##winpty docker run -d --net=logging --name andrei-logstash -p 5044:5044 andrei/logstash logstash agent -f config/
 
 
-#winpty docker run -d --net=logging --name andrei-kibana -p 80:80 -p 5601:5601 andrei/kibana nginx -g "daemon off;"
+#winpty docker run -d --net=logging --name andrei-kibana -p 80:80 -p 5601:5601 andrei/kibana"
+
+#winpty docker run -d --net=logging --name andrei-filebeat andrei/filebeat"
